@@ -12,16 +12,16 @@ public class CalculatorTest {
         ShapeCalculator shapeCalculator = new ShapeCalculator();
 
         System.out.println("Pole prostokata o bokach" + ((Rectangle) shapes[0]).sideA +
-                ", " + ((Rectangle) shapes[0]).sideB + " wynosi: " + shapeCalculator.calculateArea(((Rectangle) shapes[0])));
+                ", " + ((Rectangle) shapes[0]).sideB + " wynosi: " + shapeCalculator.calculateArea(((shapes[0]))));
 
 
         System.out.println("Obwod prostokata o bokach" + ((Rectangle) shapes[0]).sideA +
-                ", " + ((Rectangle) shapes[0]).sideB + " wynosi: " + shapeCalculator.calculatrePerimeter(((Rectangle) shapes[0])));
+                ", " + ((Rectangle) shapes[0]).sideB + " wynosi: " + shapeCalculator.calculatrePerimeter(((shapes[0]))));
 
         System.out.println("Pole kola o promieniu: " + ((Circle) shapes[1]).radius +
-                " wynosi: " + shapeCalculator.calculateArea((Circle) shapes[1]));
+                " wynosi: " + shapeCalculator.calculateArea(shapes[1]));
 
         System.out.println("Obwod koła o promieniu: " + ((Circle) shapes[1]).radius
-                + " wynosi: " + shapeCalculator.calculatrePerimeter(((Circle) shapes[1])));
+                + " wynosi: " + shapeCalculator.calculatrePerimeter(shapes[1]));
     }
 }
